@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Coffee Room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="icon" type="image/png" href="images/coffee-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css"></link>
+    <!-- js -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+<!-- nav -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
+        <!-- coffee商標 -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/coffee-logo.png" width="150" alt="Coffee咖啡館商品">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item"><a class="nav-link" href="#products.html">店內餐飲</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news.html">最新消息</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutcoffee.html">咖啡學</a></li>
+                <li class="nav-item"><a class="nav-link" href="#brand.html">品牌故事</a></li>
+                <li class="nav-item"><a class="nav-link" href="#area.html">門市資訊</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav> 
+</header>
+<!-- figure 輪播圖片owl-->
+<section>
+    <div class="owl">
+    <!-- owl html -->
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="images/carousel-01.jpg" alt=""></div>
+            <div class="item"><img src="images/carousel-02.jpg" alt=""></div>
+            <div class="item"><img src="images/carousel-03.jpg" alt=""></div>
+            <div class="item"><img src="images/carousel-04.jpg" alt=""></div>
+            <div class="item"><img src="images/carousel-05.jpg" alt=""></div>
+        </div>
+    </div>
+   <!-- owl js -->
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        nav:false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+            
+        }
+    })
+    </script>
+</section>  
+<!--最新消息news-->
+<section class="container mt-5">
+        <table class="table table-hover">
+            <thead class="table-borderless">
+              <tr>
+                <th scope="col font-weight-bold pr-5">News</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col font-weight-bold" class="text-right">More &nbsp;></th>
+              </tr>
+            </thead>
+            <tbody>
+    
+              <tr class="text-center">
+                <th scope="row" class="align-middle">2019/05/28</th>
+                <td colspan="2" class="text-danger font-weight-bold"><span>【</span>活動資訊<span>】</span>
+                </td>
+                <td class="text-left">週五歡樂倍，三人同行，咖啡買兩件，多送一件 </td>
+              </tr>
+              <tr class="text-center">
+                <th scope="row" class="align-middle">2019/05/25</th>
+                <td colspan="2" class="text-danger font-weight-bold"><span>【</span>優惠活動<span>】</span></td>
+                <td class="text-left">使用花旗Apple Pay支付，享同飲品第二杯半價～ </td>
+              </tr>
+              <tr class="text-center">
+                <th scope="row" class="align-middle">2019/05/15</th>
+                <td colspan="2" class="text-danger font-weight-bold"><span>【</span>優惠價格<span>】</span></td>
+                <td class="text-left">使用永豐Apple Pay支付，享同飲品第二杯半價～</td>
+              </tr>
+              <tr class="text-center">
+                <th scope="row" class="align-middle">2019/05/08</th>
+                <td colspan="2" class="text-danger font-weight-bold"><span>【</span>新店開幕<span>】</span></td>
+                <td class="text-left">New Open！台南成功店開幕囉～ </td>
+              </tr>
+              
+             </tbody>
+          </table>
+</section>
+<!-- 三圖區分 -->
+<section id="three" class="envor">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-4 text-center">
+                    <img src="images/coffee.png" alt="">
+                    <h3 class="mt-4 font-weight-bold">手做咖啡</h3>
+                    <p></p>剛磨好的咖啡豆確實泡起來最香醇、好喝，若
+                        對咖啡口味非常講究。
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                        <img src="images/cookies.png" alt="">
+                        <h3 class="mt-4 font-weight-bold">手工餅乾</h3>
+                        <p>手工揉製、嚴選食材奶香濃郁、口感酥脆。
+                            高人氣口味手工餅乾暖心推薦。
+                        </p>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                        <img src="images/cake.png" alt="">
+                        <h3 class="mt-4 font-weight-bold">精緻甜點</h3>
+                        <p>每份甜點背後的那份渴望傳遞幸福的心意，
+                            都使每一口成為甜蜜的記憶。
+                        </p>
+                </div>
+            </div>
+        </div>  
+</section>
+<!-- 五張照片 -->
+<div id="five" class="container">
+    <div class="row mt-5">
+        <div class="col-md-7 col-sm-12">
+            <img src="images/pic01.jpg" class="w-100" alt="">
+            <p class="text-right">招牌起司蛋餅</p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="images/pic02.jpg" class="w-100 " alt="">
+            <p class="text-right">生菜吐司沙拉</p>
+        </div>
+    </div>
+    <div class="row mt-1 tt">
+        <div class="col-md-4 col-sm-12">
+            <img src="images/pic03.jpg" class="w-100" alt="">
+            <p class="text-right">草莓芋泥布丁塔</p>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <img src="images/pic04.jpg" class="w-100" alt="">
+            <p class="text-right">烘烤牛肉餅皮</p>
+        </div>
+        <div class="col-lg-5 col-md-5 up col-sm-12">
+            <img src="images/pic05.jpg" class="w-100" alt="">
+            <p class="text-right">茄汁義大利醬麵</p>
+        </div>
+    </div>
+</div>
+<!-- 品牌精神 -->
+<section class="mt-5 textcontainer">
+        <div class="container text-center">
+                <h2 class="text-center">品牌精神</h2>
+                <p class="text-center">Brand</p>
+    
+            <div class="row">
+                <div class="col-md-6">
+                        <img src="images/icons_coffee-shop.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p class="mt-5">
+                        <i class="fas fa-quote-left"></i>
+                        Coffee提供高品質的咖啡與服務以及莊園級精品咖啡豆或單品咖啡豆，
+                        我們除了義式壓縮也提供手沖咖啡，搭配獨特的空間設計理念，
+                        提供你一個品嚐咖啡的一個好去處。
+                        <i class="fas fa-quote-right"></i>
+                    </p>
+                    <button type="button" class=" btn btn-outline-dark btn-lg font-weight-bold"> 更多相關訊息 > </button>
+                </div> 
+                   
+            </div>
+        </div>
+
+</section>
+<!--4圖背景圖固定 -->
+<section class="mt-5">
+    <div class="container-fluid">
+        <div class="row no-gutters cc">
+            <div class="col-md-3 gg">
+                <div class="bg bg00">
+                    <img src="images/bg00.jpg" class="w-100" alt="">
+                    <p>點心</p>
+                </div>
+            </div>
+            <div class="col-md-3 gg">
+                    <div class="bg bg01">
+                        <img src="images/bg01.jpg" class="w-100" alt="">
+                        <p>咖啡</p>
+                    </div>
+            </div>
+            <div class="col-md-3 gg">
+                    <div class="bg bg02">
+                        <img src="images/bg02.jpg" class="w-100" alt="">
+                        <p>甜點</p>
+                    </div>
+            </div> 
+            <div class="col-md-3 gg">
+                    <div class="bg bg03">
+                        <img src="images/bg03.jpg" class="w-100" alt="">
+                        <p>餅乾</p>
+                    </div>
+            </div>   
+        </div>
+    </div>
+</section>
+<!--卡片區 -->
+<section id="card" class="card">
+        <div class="container">
+                <h2 class="text-center">卡片專區</h2>
+                <p class="text-center">Card</p>
+        <!-- 1 -->
+        <div class="row">
+            <div class="col-md-5">
+            <div class="card">
+                <img src="images/news-01.jpg"  class="w-100 card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">恭喜達成三十萬會員成立，會員限定期間優惠，新用卡刷卡消費滿888再送88點數回饋禮金，
+                        活動期限至年底12月底前，趕緊來買個夠...
+                    </p>
+                    <button href="#" class="btn btn-outline-dark font-weight-bold">詳細資訊 ></button>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-7">
+            <div class="card">
+                <img src="images/news-02.jpg"  class="w-100 card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">這個夏季，讓你杯子變的不一樣。<br>
+                    凡消費滿500元，即可獲得限量版花樣玻璃保溫瓶抽獎券一張，全台限量1000個，買越多抽越多，就等你來抽...</p>
+                    <button href="#" class="btn btn-outline-dark font-weight-bold">詳細資訊 ></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="row mt-3">
+                <div class="col-md-7">
+                <div class="card">
+                    <img src="images/news-03.jpg"  class="w-100 card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">季節咖啡限定，凡是購買指定商品，並消費達到千元標準，利買折扣200元現金，讓你帶回家；
+                            這麼划算的事，只有在這個季節才會出現...</p>
+                        <button href="#" class="btn btn-outline-dark font-weight-bold">詳細資訊 ></button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-5">
+                <div class="card">
+                    <img src="images/news-04.jpg"  class="w-100 card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">官方直營限定點數歡樂送，凡在7/1 - 8/16 在官方網站下購買任何產品，點數累積6倍送；送到你不要不要的，不怕你拿，只怕你不買...</p>
+                        <button href="#" class="btn btn-outline-dark font-weight-bold">詳細資訊 ></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- 聯絡我們 -->
+<section id="contact" class="mt-5">
+    <div class="container">
+            <h2 class="text-center">聯絡我們</h2>
+            <p class="text-center">Contact</p>
+        <div class="row">
+            
+            <div class="col-md-6">
+                <form> 
+                        <div class="form-group font-weight-bold">
+                                <label for="exampleInputName">姓名 Name</label>
+                                <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="">
+                        </div>
+
+                        <div class="form-group font-weight-bold">
+                          <label for="exampleInputEmail1">信箱 E-mail</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+
+                        <div class="form-group font-weight-bold">
+                          <label for="exampleInputPassword1">電話 Cell Phone</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                        </div>
+                        
+                        <div class="form-group font-weight-bold">
+                                <label for="exampleFormControlTextarea1">建議事項 Suggestion</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark">送出訊息</button>
+
+                      </form>
+            </div>    
+            <div class="col-md-6 text-center">
+                <img src="images/area.jpg" width="300" src="" alt="">
+                <p class="mt-2 text-muted">歡迎有任何問題都可以詢問我們!<br>祝您有美好的一天</p>
+            </div>      
+        </div>
+    </div>
+        
+</section>
+<!-- footer -->
+<footer class="py-md-4 py-lg-5 text-white link-color">
+        <div class="container pt-3">
+            
+            <div class="d-flex justify-content-between"> 
+             
+              
+              <div class="row">
+                  <!-- 關於Coffee Room -->
+                  <ul class="col-md-5">
+                      <h4>關於Coffee Room</h4>
+                      <p class="text-muted">"平價享受，只服務最懂咖啡的你"</p>
+                      <p>「高貴享受，平價消費」的服務堅持「精緻、美感、創新」</p>
+                      <ul class="list-unstyled d-flex social-link py-3">
+                          <li><a href="javascript;"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="javascript;"><i class="fab fa-line"></i></a></li>
+                          <li><a href="javascript;"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="javascript;"><i class="fab fa-youtube"></i></a></li>
+                          <li><a href="javascript;"><i class="fab fa-twitter"></i></a></li>
+                      </ul>
+                  </ul>
+                  <!-- 聯絡Coffee Room -->
+                  <ul class="col-md-4">
+                      <h4>聯絡Coffee Room</h4>
+                      <ul class="list-unstyled">
+                          <li>
+                              <span class="d-md-block text-muted py-2"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;地址:</span>
+                              <span class="spantext">台南中西區成功路二段145號</span>
+                          </li>
+                          <li>
+                              <span class="d-md-block text-muted py-2"><i class="fas fa-phone"></i>&nbsp;&nbsp;電話:</span>
+                              <span class="spantext">06-9876540</span>
+                          </li>
+                          <li>
+                              <span class="d-md-block text-muted py-2"><i class="fas fa-envelope-open"></i>&nbsp;&nbsp;電子郵件:</span>
+                              <span class="spantext"><a href="service@coffeeroom.com.tw">service@coffeeroom.com.tw</a></span>
+                          </li>
+                      </ul>
+                  </ul>
+                  <!-- 網站連結 -->
+                  <ul class="col-md-3">
+                      <h4>網站連結</h4>
+                      <ul class="nav flex-column list-unstyled">
+                          <li class="nav-item"><a href="#coffee-products.html" class="nav-link">商品介紹</a></li>
+                          <li class="nav-item"><a href="#coffee-news.html" class="nav-link">最新消息</a></li>
+                          <li class="nav-item"><a href="#about-coffee.html" class="nav-link">咖啡學</a></li>
+                          <li class="nav-item"><a href="#brand-story.html" class="nav-link">品牌故事</a></li>
+                          <li class="nav-item"><a href="#coffee-store-location.html" class="nav-link">門市資訊</a></li>
+                      </ul>
+                  </ul>
+              </div>
+           </div>
+        </div>
+</footer>
+
+<!-- bootstap js CDN-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
